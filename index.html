@@ -1,0 +1,373 @@
+<!DOCTYPE html>             
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="/img/minecraft.png">
+        <title>MINECRAFT:food and saturation</title>
+
+        <link rel="stylesheet" href="style.css">
+
+        <style>
+            body {
+                background-color: #146C94;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            th {
+                padding: 4px 18px;
+            }
+            table, th, td {
+              border:1px solid #AFD3E2;
+              color:aqua;
+            }
+
+            #title {
+                color: white;
+                font-size: 40px;
+
+            }
+
+            .monster_droop {
+                color:rgb(174, 38, 38)
+            }
+
+            .special {
+                color:magenta
+            }
+
+            .poisonus {
+                color:rgb(6, 234, 6)
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- 
+            1. Inline CSS
+            2. Internal CSS
+            3. External CSS
+         -->
+
+        <h1 id="title">minecraft</h1>
+        <h2 style="color: aqua;">food</h2>
+        <p style="color: aqua;">hunger and saturation.</p>
+
+         <img src="img/minecraft.png" alt="minecraft" width="200px">
+
+         <div>
+            <table style=" margin-top: 32px;">
+                <tr>
+                    <th>no</th>
+                    <th>name</th>
+                    <th>hunger</th>
+                    <th>saturation</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>apple</td>
+                    <td>2</td>
+                    <td>2,4</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>baked potato</td>
+                    <td>2,5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>beetroot</td>
+                    <td>0,5</td>
+                    <td>1,2</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>beetroot soup</td>
+                    <td>3</td>
+                    <td>7,2</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>bread</td>
+                    <td>2,5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>cake(slice)</td>
+                    <td>1</td>
+                    <td>0,4</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>cake(whole)</td>
+                    <td>7</td>
+                    <td>2,8</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>carrot</td>
+                    <td>1,5</td>
+                    <td>3,6</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>chorus fruit</td>
+                    <td>2</td>
+                    <td>2,4</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>cooked chicken</td>
+                    <td>3</td>
+                    <td>7,2</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>cooked cod</td>
+                    <td>2,5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>cooked mutton</td>
+                    <td>3</td>
+                    <td>9,6</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>cooked porkchop</td>
+                    <td>4</td>
+                    <td>12,8</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>cooked rabbit</td>
+                    <td>2,5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>cooked salmon</td>
+                    <td>3</td>
+                    <td>9,6</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>cookie</td>
+                    <td>1</td>
+                    <td>0,4</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>dried kelp</td>
+                    <td>0,5</td>
+                    <td>0,2</td>
+                </tr>
+                <tr>
+                    <td class="special">18</td>
+                    <td class="special">golden apple</td>
+                    <td class="special">2</td>
+                    <td class="special">9,6</td>
+                </tr>
+                <tr>
+                    <td class="special">19</td>
+                    <td class="special">E golden apple</td>
+                    <td class="special">2</td>
+                    <td class="special">9,6</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>glow berries</td>
+                    <td>1</td>
+                    <td>0,4</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>golden carrot</td>
+                    <td>3</td>
+                    <td>14,4</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>honey bottle</td>
+                    <td>3</td>
+                    <td>1,2</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>melon slice</td>
+                    <td>1</td>
+                    <td>1,2</td>
+                </tr>
+
+            </table>
+            <table  style=" margin-top: 32px;">
+                <tr>
+                    <th>no</th>
+                    <th>name</th>
+                    <th>hunger</th>
+                    <th>saturation</th>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>mushroom stew</td>
+                    <td>3</td>
+                    <td>7,2</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>poisonus potato</td>
+                    <td>1</td>
+                    <td>1,2</td>
+                </tr>
+                <tr>
+                    <td class="poisonus">26</td>
+                    <td class="poisonus">potato</td>
+                    <td class="poisonus">0,5</td>
+                    <td class="poisonus">0,6</td>
+                </tr>
+                <tr>
+                    <td class="poisonus">27</td>
+                    <td class="poisonus">pofferfish</td>
+                    <td class="poisonus">0,5</td>
+                    <td class="poisonus">0,2</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>pumpkin pie</td>
+                    <td>4</td>
+                    <td>4,8</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>rabbit stew</td>
+                    <td>5</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>raw beef</td>
+                    <td>1,5</td>
+                    <td>1,8</td>
+                </tr>
+                <tr>
+                    <td class="poisonus">31</td>
+                    <td class="poisonus">raw chicken</td>
+                    <td class="poisonus">1</td>
+                    <td class="poisonus">1,2</td>
+                </tr>
+                <tr>
+                    <td>32</td>
+                    <td>raw cod</td>
+                    <td>1</td>
+                    <td>0,4</td>
+                </tr>
+                <tr>
+                    <td>33</td>
+                    <td>raw mutton</td>
+                    <td>1</td>
+                    <td>1,2</td>
+                </tr>
+                <tr>
+                    <td>34</td>
+                    <td>raw porkchop</td>
+                    <td>1,5</td>
+                    <td>1,8</td>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>raw rabbit</td>
+                    <td>1,5</td>
+                    <td>1,8</td>
+                </tr>
+                <tr>
+                    <td>36</td>
+                    <td>raw salmon</td>
+                    <td>1</td>
+                    <td>0,4</td>
+                </tr>
+                <tr>
+                    <td class="monster_droop">37</td>
+                    <td class="monster_droop">rotten flesh</td>
+                    <td class="monster_droop">2</td>
+                    <td class="monster_droop">0,8</td>
+                </tr>
+                <tr>
+                    <td class="monster_droop">38</td>
+                    <td class="monster_droop">spider eye</td>
+                    <td class="monster_droop">1</td>
+                    <td class="monster_droop">3,2</td>
+                </tr>
+                <tr>
+                    <td>39</td>
+                    <td>steak</td>
+                    <td>4</td>
+                    <td>12,8</td>
+                </tr>
+                <tr>
+                    <td class="special">40</td>
+                    <td class="special">suspicius stew</td>
+                    <td class="special">3</td>
+                    <td class="special">7,2</td>
+                </tr>
+                <tr>
+                    <td class="special">41</td>
+                    <td class="special">suspicius stew(get saturation)</td>
+                    <td class="special">6,5</td>
+                    <td class="special">21,2</td>
+                </tr>
+                <tr>
+                    <td>42</td>
+                    <td>sweet berries</td>
+                    <td>1</td>
+                    <td>1,2</td>
+                </tr>
+                <tr>    
+                    <td>43</td>               
+                    <td>tropical fish</td>
+                    <td>0,5</td>
+                    <td>0,2</td>
+                </tr>
+
+            </table>
+
+         </div>
+        
+         <h3 style="color: purple;">potion</h3>
+         <p style="color:rgb(174, 173, 173);">debuuf</p>
+         <div style="display: flex;">
+            
+            <ul>
+                <li>slowness potion</li>
+                <li>weakness potion</li>
+                <li>poison potion</li>
+                <li>decay potion</li>
+            </ul>
+            <ul>
+                <li>harming potion</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+         </div>
+         <p style="color:#AFD3E2;">buuf</p>
+         <div style="display: flex;">        
+             <ul>           
+                <li>strength potion</li>
+                <li>Swiftness potion</li>
+                <li>Night Vision potion</li>
+                <li>Invisibility potion</li>
+            </ul>
+            <ul>
+                <li>Water Breathing potion</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+         </div>
+
+    </body>
+</html>
